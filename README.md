@@ -14,7 +14,7 @@ SPOTIFY_CLIENT_SECRET=<Your client secret>
 - Last, run this project with `bun run build && bun run start` or just run `bun run wetify` instead
 
 # Additional
-If you wanna add more things to this project just run the project as dev mode with `bun run dev` and you can start adding shits from there easily, feel free to also add more packages for your needs
+It's better to see the page on 80% zoom level for better readability and if you wanna add more things to this project just run the project as dev mode with `bun run dev` then you can start adding shits from there easily, feel free to also add more packages for your needs
 
 # Bugs & Feature
 If you found any bugs or have any feature ideas, feel free to open an issue about it here and explain how to reproduce the bug or explain your feature idea there. I'd be so happy if you wanna do this shi, so enjoy my project and i hope ts will help you do something better on your life than before

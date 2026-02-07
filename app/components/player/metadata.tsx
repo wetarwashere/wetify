@@ -13,19 +13,19 @@ const Metadata = ({ result, artist }: PlayerProps) => {
     <div className="p-4 bg-gray-800 flex flex-col gap-4 min-w-70 select-none">
       <div className="flex flex-row items-start justify-start gap-3">
         <FaMusic className="text-white text-2xl mt-2 shrink-0" />
-        <Link href={tracks[0]?.external_urls?.spotify} className="text-2xl font-bold text-white max-w-70 underline-offset-6 underline wrap-break-word hover:text-gray-300 transition duration-150 ease-out cursor-pointer">
+        <Link target="_blank" href={tracks[0]?.external_urls?.spotify} className="text-2xl font-bold text-white max-w-70 underline-offset-6 underline wrap-break-word hover:text-gray-300 transition duration-150 ease-out cursor-pointer">
           {tracks[0]?.name}
         </Link>
       </div>
       <div className="flex flex-row items-start justify-start gap-3">
         <FaPencil className="text-white text-2xl mt-1 shrink-0" />
-        <Link href={tracks[0]?.album?.external_urls?.spotify} className="text-2xl font-bold text-white max-w-70 line-clamp-3 wrap-break-word hover:text-gray-300 transition duration-150 ease-out cursor-pointer">
+        <Link target="_blank" href={tracks[0]?.album?.external_urls?.spotify} className="text-2xl font-bold text-white max-w-70 line-clamp-3 wrap-break-word hover:text-gray-300 transition duration-150 ease-out cursor-pointer">
           {tracks[0]?.album?.name}
         </Link>
       </div>
       <div className="flex flex-row justify-start items-start gap-3">
         <FaCalendarDay className="text-white text-2xl mt-1 shrink-0" />
-        <Link href={`https://en.wikipedia.org/wiki/${tracks[0]?.album?.release_date?.split("-")[0]}`} className="text-2xl flex flex-col font-bold text-white hover:text-gray-300 transition duration-150 ease-out max-w-70 wrap-break-word">
+        <Link target="_blank" href={`https://en.wikipedia.org/wiki/${tracks[0]?.album?.release_date?.split("-")[0]}`} className="text-2xl flex flex-col font-bold text-white hover:text-gray-300 transition duration-150 ease-out max-w-70 wrap-break-word">
           {tracks[0]?.album?.release_date?.split("-")[0]}
         </Link>
       </div>
@@ -34,7 +34,7 @@ const Metadata = ({ result, artist }: PlayerProps) => {
           <FaHeart className="text-white text-2xl mt-1 shrink-0" />
           <h1 className="text-2xl flex flex-col font-bold text-white max-w-70 wrap-break-word">
             {artist?.artists?.items[0]?.genres?.map((genre, index) => (
-              <Link href={`https://google.com/search?q=${genre} genre`} key={index} className="hover:text-gray-300 transition duration-150 ease-out max-w-70 truncate cursor-pointer">
+              <Link target="_blank" href={`https://google.com/search?q=${genre} genre`} key={index} className="hover:text-gray-300 transition duration-150 ease-out max-w-70 truncate cursor-pointer">
                 {capitalizeEach(genre)}
               </Link>
             ))}
@@ -52,7 +52,7 @@ const Metadata = ({ result, artist }: PlayerProps) => {
         <FaUser className="text-white text-2xl mt-1 shrink-0" />
         <h1 className="text-2xl flex flex-col font-bold text-white wrap-break-word">
           {tracks[0]?.artists?.map((artist, index) => (
-            <Link href={artist.external_urls.spotify} key={index} className="hover:text-gray-300 transition duration-150 ease-out max-w-70 truncate cursor-pointer">{artist.name}</Link>
+            <Link target="_blank" href={artist.external_urls.spotify} key={index} className="hover:text-gray-300 transition duration-150 ease-out max-w-70 truncate cursor-pointer">{artist.name}</Link>
           ))}
         </h1>
       </div>
