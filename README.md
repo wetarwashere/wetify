@@ -2,7 +2,7 @@
 Ts is a spotify wrapper made with the help of next js and bun runtime
 
 # Running
-First, you must get your client id and client secret from your app on [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), if you still don't have any then make one
+First, you must get your client id and client secret from your app on [Spotify Developer Dashboard](https://developer.spotify.com/dashboard), if you still don't have any then make one  
 Second, copy the client id and client secret from the app you made before into this project `.env.local` file and put them there like this
 
 ```env
