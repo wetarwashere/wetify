@@ -14,7 +14,7 @@ import { FaMusic } from "react-icons/fa6"
 
 const Player = ({ result, artist }: PlayerProps) => {
   const tracks = result.tracks?.items
-  const [showPlayer, setShowPlayer] = useState(true)
+  const [showPlayer, setShowPlayer] = useState(false)
 
   useEffect(() => {
     const keyDownHandler = (event: KeyboardEvent) => {
