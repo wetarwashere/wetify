@@ -11,6 +11,7 @@ https://github.com/user-attachments/assets/9c1fd5f8-dc11-45be-98b0-66d01b158106
 SPOTIFY_CLIENT_ID=<Your client id>
 SPOTIFY_CLIENT_SECRET=<Your client secret>
 ```
+- Third, install the needed packages for this project with the `bun install` command  
 - Last, run this project with `bun run build && bun run start` or just run `bun run wetify` instead
 
 # Controls
