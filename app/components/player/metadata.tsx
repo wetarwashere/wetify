@@ -10,7 +10,7 @@ const Metadata = ({ result, artist }: PlayerProps) => {
   const genres = artist?.artists?.items[0]?.genres
 
   return (
-    <div className="p-4 bg-gray-800 flex flex-col gap-4 min-w-70 select-none">
+    <div className="p-4 bg-gray-800 flex flex-col gap-4 min-w-70">
       <div className="flex flex-row items-start justify-start gap-3">
         <FaMusic className="text-white text-2xl mt-2 shrink-0" />
         <Link target="_blank" href={tracks[0]?.external_urls?.spotify} className="text-2xl font-bold text-white max-w-70 underline-offset-6 truncate underline hover:text-gray-300 transition duration-150 ease-out cursor-pointer">

@@ -41,8 +41,8 @@ const Player = ({ result, artist }: PlayerProps) => {
 
       <AnimatePresence mode="wait">
         {showPlayer && (
-          <motion.div key={tracks[0].id} initial={{ x: -500, opacity: 1 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -500, opacity: 1 }} transition={{ duration: 0.7, ease: "easeOut" }} className="p-6 bg-black m-4 border-white border-3 h-max">
-            <Image src={tracks[0].album.images[0].url} width={310} height={310} alt="Album image" draggable={false} className="select-none" />
+          <motion.div key={tracks[0].id} initial={{ x: -500, opacity: 1 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -500, opacity: 1 }} transition={{ duration: 0.7, ease: "easeOut" }} className="p-6 bg-black m-4 border-white border-3 h-max select-none">
+            <Image src={tracks[0].album.images[0].url} width={310} height={310} alt="Album image" draggable={false} />
             <Metadata result={result} artist={artist} />
           </motion.div>
         )}
