@@ -53,7 +53,7 @@ const Search = () => {
         {showSearch && (
           <motion.div initial={{ y: -200, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -200, opacity: 0 }} transition={{ duration: 0.7, ease: "easeOut" }} className="flex justify-between items-center bg-white m-4">
             <input type="text" value={input} onChange={(event: React.ChangeEvent<HTMLInputElement>) => setInput(capitalize(event.target.value))} ref={inputRef} onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => event.key === "Enter" && handleSearch()} placeholder="Input a song name" className="border-white border-3 outline-none bg-black text-white text-2xl p-3 font-bold" />
-            <FaMagnifyingGlass className="text-black text-3xl mx-5 hover:text-gray-500 transition duration-150 ease-out cursor-pointer" onClick={handleSearch} />
+            <FaMagnifyingGlass className="text-black size-8 mx-5 hover:text-gray-500 transition duration-150 ease-out cursor-pointer" onClick={handleSearch} />
           </motion.div>
         )}
       </AnimatePresence>
