@@ -2,7 +2,7 @@
 Ts is a spotify wrapper that making use of the spotify api feature, made with the help of next js, typescript, and bun as the runtime
 
 # Preview
-https://github.com/user-attachments/assets/9c1fd5f8-dc11-45be-98b0-66d01b158106
+https://github.com/user-attachments/assets/e12d5002-21d9-46fa-8985-fb47418ffdaa
 
 # Running
 - First, clone this github repo into your machine, then you must get your own client id and client secret from your app on [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)  
