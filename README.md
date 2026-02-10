@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/9c1fd5f8-dc11-45be-98b0-66d01b158106
 
 # Running
 - First, clone this github repo into your machine, then you must get your own client id and client secret from your app on [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)  
-- Second, copy the client id and client secret from the app you made before into this project `.env.local` file and put them there like this  
+- Second, copy the client id and client secret from the app you made before into this project `.env` file and put them there like this  
 ```env
 SPOTIFY_CLIENT_ID=<Your client id>
 SPOTIFY_CLIENT_SECRET=<Your client secret>

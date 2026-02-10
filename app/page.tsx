@@ -1,7 +1,6 @@
 import { SpotifyApi } from "@spotify/web-api-ts-sdk"
 import Player from "./components/player/player"
 import Search from "./components/search"
-import { notFound } from "next/navigation"
 
 const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }> | { query: string } }) => {
   const res = SpotifyApi.withClientCredentials(process.env.SPOTIFY_CLIENT_ID!, process.env.SPOTIFY_CLIENT_SECRET!)
@@ -9,10 +8,6 @@ const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }>
   const query = params?.query || "Within the dream"
   const result = await res.search(query, ["track"])
   const artist = await res.search(result?.tracks?.items[0]?.artists[0]?.name, ["artist"])
-
-  if (!res || result.tracks.items.length <= 0) {
-    return notFound()
-  }
 
   return (
     <div className="flex justify-between items-start h-screen w-screen">
