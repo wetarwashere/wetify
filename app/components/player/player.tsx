@@ -1,16 +1,16 @@
 "use client"
 
-export interface PlayerProps {
-  result: SearchResults<["track"]> | null
-  artist: Artist | null
-}
-
 import { motion, AnimatePresence } from "framer-motion"
 import { Artist, SearchResults } from "@spotify/web-api-ts-sdk"
 import Image from "next/image"
 import Metadata from "./metadata"
 import { useEffect, useState } from "react"
 import { FaMusic } from "react-icons/fa6"
+
+export interface PlayerProps {
+  result: SearchResults<["track"]> | null
+  artist: Artist | null
+}
 
 const Player = ({ result, artist }: PlayerProps) => {
   const tracks = result?.tracks?.items

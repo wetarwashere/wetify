@@ -3,7 +3,6 @@ import Player from "./components/player/player"
 import Search from "./components/search"
 
 const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }> | { query: string } }) => {
-
   try {
     const res = SpotifyApi.withClientCredentials(process.env.SPOTIFY_CLIENT_ID!, process.env.SPOTIFY_CLIENT_SECRET!)
     const params = await searchParams
