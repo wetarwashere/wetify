@@ -20,7 +20,7 @@ const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }>
         {result && <Player result={result} artist={artist} />}
         <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 h-screen -z-10 select-none">
           <h1 className="text-9xl text-white font-bold"><span className="text-green-600">Wet</span><span className="text-black">ify</span></h1>
-          <h1 className="text-gray-300 font-bold text-2xl">Wetar&apos;s Spotify Wrapper</h1>
+          <h1 className="text-gray-300 font-bold text-2xl">Wetar&apos;s spotify wrapper</h1>
         </div>
         <Search />
       </div>
