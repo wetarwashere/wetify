@@ -46,7 +46,7 @@ const Player = ({ result, artist }: PlayerProps) => {
 
       <AnimatePresence mode="wait">
         {showPlayer && (
-          <motion.div key={currentTrack?.id} initial={{ x: -500, opacity: 1 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -500, opacity: 1 }} transition={{ duration: 0.7, ease: "easeOut" }} className="p-4 bg-black m-4 border-white border-3 h-max select-none">
+          <motion.div key={currentTrack?.id} initial={{ x: -500, opacity: 1 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -500, opacity: 1 }} transition={{ duration: 0.7, ease: "easeOut" }} className="p-3 bg-black m-4 border-white border-3 h-max select-none">
             <Image src={currentTrack?.album?.images[0]?.url} width={310} height={310} alt="Album image" className="hover:scale-102 cursor-pointer duration-250 transition ease-out" onClick={() => window.open(currentTrack?.album?.images[0]?.url)} draggable={false} />
             <Metadata result={result} artist={artist} />
           </motion.div>
